@@ -58,7 +58,7 @@ export function Hero() {
         </div>
 
         {/* 3D Bike Display */}
-        <div className='h-[500px] lg:h-[600px] -mt-16 lg:mt-0'>
+        <div className='w-full h-[400px] sm:h-[500px] lg:h-[600px] -mt-16 lg:mt-0'>
           <Bike3D />
         </div>
       </div>

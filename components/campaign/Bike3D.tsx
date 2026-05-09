@@ -190,19 +190,27 @@ function BikeScene() {
     <>
       <Bike autoRotate />
       <OrbitControls enableZoom enablePan enableRotate />
-      <Environment preset="studio" />
-      <ambientLight intensity={0.8} />
-      <directionalLight position={[5, 8, 5]} intensity={1.2} castShadow />
-      <directionalLight position={[-5, 3, -5]} intensity={0.6} />
+      <color attach="background" args={['#18181b']} />
+      <ambientLight intensity={0.6} />
+      <directionalLight position={[5, 8, 5]} intensity={1.5} castShadow />
+      <directionalLight position={[-5, 3, -5]} intensity={0.8} />
+      <pointLight position={[0, 2, 3]} intensity={0.5} />
     </>
   );
 }
 
 export function Bike3D() {
   return (
-    <div className="w-full rounded-xl border border-white/20 bg-gradient-to-br from-zinc-950 to-zinc-900 p-1 overflow-hidden">
-      <Suspense fallback={<div className="h-[500px] w-full bg-zinc-900 animate-pulse" />}>
-        <Canvas camera={{ position: [0.8, 0.4, 0.8], fov: 50 }} shadows dpr={[1, 2]}>
+    <div style={{ width: '100%', height: '100%', position: 'relative' }} className="rounded-xl border border-white/20 bg-gradient-to-br from-zinc-950 to-zinc-900 p-1 overflow-hidden">
+      <Suspense fallback={<div className="h-full w-full bg-zinc-900 animate-pulse flex items-center justify-center" style={{ width: '100%', height: '100%' }}>
+        <div className="text-zinc-400">Loading 3D Bike...</div>
+      </div>}>
+        <Canvas 
+          camera={{ position: [0.8, 0.4, 0.8], fov: 50 }} 
+          shadows 
+          dpr={[1, 2]}
+          style={{ width: '100%', height: '100%', display: 'block' }}
+        >
           <BikeScene />
         </Canvas>
       </Suspense>
