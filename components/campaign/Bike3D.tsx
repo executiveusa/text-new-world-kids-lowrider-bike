@@ -11,7 +11,7 @@ function Bike({ autoRotate = true }: { autoRotate?: boolean }) {
 
   useFrame(() => {
     if (autoRotate && groupRef.current) {
-      groupRef.current.rotation.y += 0.004;
+      groupRef.current.rotation.y += 0.006;
     }
   });
 
@@ -206,7 +206,7 @@ export function Bike3D() {
         <div className="text-zinc-400">Loading 3D Bike...</div>
       </div>}>
         <Canvas 
-          camera={{ position: [0.8, 0.4, 0.8], fov: 50 }} 
+          camera={{ position: [0.6, 0.3, 1.2], fov: 45 }} 
           shadows 
           dpr={[1, 2]}
           style={{ width: '100%', height: '100%', display: 'block' }}
