@@ -1,2 +1,2 @@
-# text-new-world-kids-lowrider-bike
-Auction Bike 
+# new-world-kids-lowrider-bike
+Run: npm install && npm run dev
