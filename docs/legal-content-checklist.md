@@ -1,0 +1,2 @@
+- Verify nonprofit name and donation destination.
+- Verify legal safety of claims and marks.
