@@ -11,9 +11,9 @@ export function Hero() {
         <div className='absolute bottom-20 left-0 w-96 h-96 bg-blue-500/5 blur-3xl rounded-full' />
       </div>
 
-      <div className='relative grid min-h-[100dvh] gap-8 px-6 py-16 lg:grid-cols-2 items-center'>
+      <div className='relative flex flex-col lg:grid lg:grid-cols-2 gap-8 px-6 py-16 min-h-[100dvh] items-center'>
         {/* Content Side */}
-        <div className='flex flex-col justify-center space-y-6'>
+        <div className='flex flex-col justify-center space-y-6 w-full'>
           <div>
             <p className='text-sm font-medium text-blue-400 uppercase tracking-wider'>
               {campaign.nonprofitName} Campaign
@@ -58,7 +58,7 @@ export function Hero() {
         </div>
 
         {/* 3D Bike Display */}
-        <div className='w-full h-[400px] sm:h-[500px] lg:h-[600px] -mt-16 lg:mt-0'>
+        <div className='w-full h-[400px] sm:h-[500px] lg:h-[600px]'>
           <Bike3D />
         </div>
       </div>
