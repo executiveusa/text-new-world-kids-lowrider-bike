@@ -1,5 +1,6 @@
 import { Hero } from "@/components/campaign/Hero";
 import { CampaignStory } from "@/components/campaign/CampaignStory";
+import { BeforeGallery } from "@/components/campaign/BeforeGallery";
 import { TransformationTimeline } from "@/components/campaign/TransformationTimeline";
 import { ConceptGallery } from "@/components/campaign/ConceptGallery";
 import { ArtistCall } from "@/components/campaign/ArtistCall";
@@ -13,10 +14,11 @@ import { KineticMarquee } from "@/components/cinematic/KineticMarquee";
 
 export default function Page() {
   return (
-    <main className="bg-zinc-950 text-white">
+    <main className="bg-background text-foreground">
       <Hero />
       <KineticMarquee>LOWRIDER • ART • COMMUNITY • RESTORATION • YOUTH • CRAFT</KineticMarquee>
       <CampaignStory />
+      <BeforeGallery />
       <TransformationTimeline />
       <ConceptGallery />
       <ArtistCall />

@@ -37,11 +37,11 @@ const TIMELINE_STEPS = [
 
 export function TransformationTimeline() {
   return (
-    <section className='bg-zinc-950 text-white py-20 lg:py-28'>
+    <section className='bg-muted text-foreground py-20 lg:py-28'>
       <div className='mx-auto max-w-7xl px-6'>
         <div className='mb-16'>
           <h2 className='text-4xl lg:text-5xl font-bold mb-4'>The build plan</h2>
-          <p className='text-lg text-zinc-300 max-w-2xl'>
+          <p className='text-lg text-muted-foreground max-w-2xl'>
             A clear path from concept to finished lowrider art piece, supporting New World Kids programs every step of the way.
           </p>
         </div>
@@ -51,7 +51,7 @@ export function TransformationTimeline() {
           {TIMELINE_STEPS.map((step, index) => (
             <div
               key={index}
-              className='group relative bg-gradient-to-br from-zinc-900 to-zinc-800 border border-white/10 rounded-xl p-8 hover:border-blue-500/30 transition-all duration-300'
+              className='group relative bg-background border border-border rounded-xl p-8 hover:border-blue-600 transition-all duration-300'
             >
               {/* Number Badge */}
               <div className='absolute -top-4 -right-4 w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm shadow-lg'>
@@ -62,15 +62,15 @@ export function TransformationTimeline() {
               <div className='text-4xl mb-4'>{step.icon}</div>
 
               {/* Content */}
-              <h3 className='text-xl font-semibold mb-2 group-hover:text-blue-400 transition-colors'>
+              <h3 className='text-xl font-semibold mb-2 group-hover:text-blue-600 transition-colors'>
                 {step.title}
               </h3>
-              <p className='text-zinc-400 text-sm leading-relaxed'>{step.description}</p>
+              <p className='text-muted-foreground text-sm leading-relaxed'>{step.description}</p>
 
               {/* Bottom Accent */}
-              <div className='mt-6 pt-6 border-t border-white/5'>
-                <div className='flex items-center gap-2 text-xs text-zinc-500'>
-                  <CheckCircle2 className='w-4 h-4 text-blue-500' />
+              <div className='mt-6 pt-6 border-t border-border'>
+                <div className='flex items-center gap-2 text-xs text-muted-foreground'>
+                  <CheckCircle2 className='w-4 h-4 text-blue-600' />
                   <span>Community milestone</span>
                 </div>
               </div>
@@ -79,9 +79,9 @@ export function TransformationTimeline() {
         </div>
 
         {/* Timeline Connector Info */}
-        <div className='mt-16 p-8 bg-gradient-to-r from-blue-600/10 to-purple-600/10 border border-blue-500/20 rounded-xl'>
-          <h3 className='text-lg font-semibold mb-2 text-blue-300'>Timeline Estimate</h3>
-          <p className='text-zinc-300'>
+        <div className='mt-16 p-8 bg-blue-50 dark:bg-blue-600/10 border border-blue-200 dark:border-blue-500/20 rounded-xl'>
+          <h3 className='text-lg font-semibold mb-2 text-blue-900 dark:text-blue-300'>Timeline Estimate</h3>
+          <p className='text-blue-700 dark:text-blue-200'>
             Working target: approximately three months from launch, depending on artist availability, build scope, and community input.
           </p>
         </div>

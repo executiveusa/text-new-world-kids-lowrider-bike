@@ -33,11 +33,11 @@ export function Faq() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className='bg-zinc-950 text-white py-20 lg:py-28'>
+    <section className='bg-muted text-foreground py-20 lg:py-28'>
       <div className='mx-auto max-w-3xl px-6'>
         <div className='mb-16'>
           <h2 className='text-4xl lg:text-5xl font-bold mb-4'>Frequently Asked Questions</h2>
-          <p className='text-lg text-zinc-300'>
+          <p className='text-lg text-muted-foreground'>
             Have a question not listed? Reach out to us directly.
           </p>
         </div>
@@ -47,15 +47,15 @@ export function Faq() {
           {FAQ_ITEMS.map((item, index) => (
             <div
               key={index}
-              className='border border-white/10 rounded-lg overflow-hidden hover:border-white/20 transition-colors duration-300'
+              className='border border-border rounded-lg overflow-hidden hover:border-blue-600 transition-colors duration-300'
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className='w-full flex items-center justify-between p-6 bg-gradient-to-r from-zinc-900 to-zinc-800 hover:from-zinc-800 hover:to-zinc-700 transition-colors duration-300'
+                className='w-full flex items-center justify-between p-6 bg-background hover:bg-muted transition-colors duration-300'
               >
                 <h3 className='text-lg font-semibold text-left'>{item.question}</h3>
                 <span
-                  className={`ml-4 flex-shrink-0 text-blue-400 transition-transform duration-300 ${
+                  className={`ml-4 flex-shrink-0 text-blue-600 transition-transform duration-300 ${
                     openIndex === index ? 'rotate-180' : ''
                   }`}
                 >
@@ -63,8 +63,8 @@ export function Faq() {
                 </span>
               </button>
               {openIndex === index && (
-                <div className='px-6 py-4 bg-zinc-900/50 border-t border-white/5'>
-                  <p className='text-zinc-300 leading-relaxed'>{item.answer}</p>
+                <div className='px-6 py-4 bg-muted border-t border-border'>
+                  <p className='text-muted-foreground leading-relaxed'>{item.answer}</p>
                 </div>
               )}
             </div>
