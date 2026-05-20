@@ -2,12 +2,11 @@
 
 import { useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, Environment, Html } from "@react-three/drei";
-import { Mesh, Group } from "three";
+import { OrbitControls, Html } from "@react-three/drei";
+import { Group } from "three";
 
 function Bike({ autoRotate = true }: { autoRotate?: boolean }) {
   const groupRef = useRef<Group>(null);
-  const frameRef = useRef<Mesh>(null);
 
   useFrame(() => {
     if (autoRotate && groupRef.current) {
