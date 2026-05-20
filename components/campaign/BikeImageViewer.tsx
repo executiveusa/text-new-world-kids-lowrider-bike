@@ -89,7 +89,7 @@ export function BikeImageViewer() {
   return (
     <div className='w-full space-y-6'>
       {/* Main Display */}
-      <div className='relative aspect-square lg:aspect-video bg-gradient-to-b from-zinc-900 to-black rounded-xl overflow-hidden border border-white/10'>
+      <div className='relative aspect-square lg:aspect-video bg-muted rounded-xl overflow-hidden border border-border'>
         <Image
           src={BIKE_IMAGES[currentIndex].url}
           alt={BIKE_IMAGES[currentIndex].caption}
@@ -102,26 +102,26 @@ export function BikeImageViewer() {
         {/* Navigation Buttons */}
         <button
           onClick={goToPrevious}
-          className='absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-black/50 hover:bg-black/75 p-2 rounded-full transition-colors'
+          className='absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-background/80 hover:bg-background p-2 rounded-full transition-colors'
           aria-label='Previous image'
         >
-          <ChevronLeft className='w-6 h-6 text-white' />
+          <ChevronLeft className='w-6 h-6 text-foreground' />
         </button>
 
         <button
           onClick={goToNext}
-          className='absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-black/50 hover:bg-black/75 p-2 rounded-full transition-colors'
+          className='absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-background/80 hover:bg-background p-2 rounded-full transition-colors'
           aria-label='Next image'
         >
-          <ChevronRight className='w-6 h-6 text-white' />
+          <ChevronRight className='w-6 h-6 text-foreground' />
         </button>
 
         {/* Caption */}
-        <div className='absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/50 to-transparent p-6'>
-          <p className='text-white font-semibold text-lg'>
+        <div className='absolute bottom-0 left-0 right-0 bg-gradient-to-t from-background via-background/50 to-transparent p-6'>
+          <p className='text-foreground font-semibold text-lg'>
             {BIKE_IMAGES[currentIndex].caption}
           </p>
-          <p className='text-zinc-400 text-sm mt-1'>
+          <p className='text-muted-foreground text-sm mt-1'>
             {currentIndex + 1} of {BIKE_IMAGES.length}
           </p>
         </div>
@@ -129,7 +129,7 @@ export function BikeImageViewer() {
 
       {/* Helper Text */}
       <div className='text-center'>
-        <p className='text-sm text-zinc-400'>
+        <p className='text-sm text-muted-foreground'>
           Use arrows or swipe to explore different angles
         </p>
       </div>
@@ -142,8 +142,8 @@ export function BikeImageViewer() {
             onClick={() => goToImage(index)}
             className={`relative aspect-square rounded-lg overflow-hidden border-2 transition-all ${
               index === currentIndex
-                ? 'border-blue-500 ring-2 ring-blue-500'
-                : 'border-white/10 hover:border-white/30'
+                ? 'border-blue-600 ring-2 ring-blue-600'
+                : 'border-border hover:border-foreground/30 dark:hover:border-foreground/20'
             }`}
             aria-label={`View ${image.caption}`}
           >
@@ -159,10 +159,10 @@ export function BikeImageViewer() {
       </div>
 
       {/* 3D Model Coming Soon Card */}
-      <div className='mt-12 p-6 bg-gradient-to-r from-zinc-900 to-zinc-800 border border-white/10 rounded-xl'>
-        <h3 className='text-lg font-semibold text-white mb-2'>3D Model Coming Later</h3>
-        <p className='text-zinc-400'>
-          After the final build is complete, we can add a true 3D scan or GLB model for an immersive viewing experience.
+      <div className='mt-12 p-6 bg-muted border border-border rounded-xl'>
+        <h3 className='text-lg font-semibold text-foreground mb-2'>Interactive Concept Model</h3>
+        <p className='text-muted-foreground'>
+          This is a placeholder concept viewer. A true 3D scan can be added after the finished build is complete.
         </p>
       </div>
     </div>

@@ -11,13 +11,28 @@ const DONATION_TIERS = [
 
 export function DonationPanel() {
   return (
-    <section className='bg-black text-white py-20 lg:py-28'>
+    <section id='donate' className='bg-blue-50 dark:bg-blue-600/5 text-foreground py-20 lg:py-28 border-t border-border'>
       <div className='mx-auto max-w-7xl px-6'>
         <div className='mb-16'>
-          <h2 className='text-4xl lg:text-5xl font-bold mb-4'>Support the Build</h2>
-          <p className='text-lg text-zinc-300'>
-            Direct donation helps fund materials, artist compensation, and community engagement.
+          <h2 className='text-4xl lg:text-5xl font-bold mb-4'>Help Fund New World Kids Programs</h2>
+          <p className='text-lg text-muted-foreground'>
+            Every contribution directly supports materials, artist compensation, and community engagement for this transformational project.
           </p>
+        </div>
+
+        {/* Campaign Target */}
+        <div className='mb-12 p-8 bg-background border border-border rounded-xl'>
+          <div className='flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6'>
+            <div>
+              <p className='text-sm text-muted-foreground uppercase tracking-wider font-semibold mb-2'>Campaign Target</p>
+              <p className='text-4xl font-bold text-foreground'>${campaign.totalGoalUsd.toLocaleString()}</p>
+            </div>
+            <div>
+              <p className='text-sm text-muted-foreground uppercase tracking-wider font-semibold mb-2'>Currently Raised</p>
+              <p className='text-4xl font-bold text-foreground'>${campaign.currentRaisedUsd.toLocaleString()}</p>
+            </div>
+          </div>
+          <p className='text-sm text-muted-foreground'>Campaign launch target. All funds support New World Kids youth programs.</p>
         </div>
 
         {/* Donation Tiers */}
@@ -25,14 +40,14 @@ export function DonationPanel() {
           {DONATION_TIERS.map((tier, index) => (
             <div
               key={index}
-              className='bg-gradient-to-br from-zinc-900 to-zinc-800 border border-white/10 rounded-xl p-6 hover:border-blue-500/50 transition-all duration-300'
+              className='bg-background border border-border rounded-xl p-6 hover:border-blue-600 transition-all duration-300 flex flex-col'
             >
-              <div className='text-4xl font-bold text-blue-400 mb-2'>${tier.amount}</div>
+              <div className='text-4xl font-bold text-blue-600 mb-2'>${tier.amount}</div>
               <h3 className='text-xl font-semibold mb-2'>{tier.label}</h3>
-              <p className='text-sm text-zinc-400 mb-6'>{tier.benefit}</p>
+              <p className='text-sm text-muted-foreground mb-6 flex-grow'>{tier.benefit}</p>
               <a
                 href={campaign.donationUrl}
-                className='w-full inline-flex items-center justify-center py-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-lg transition-colors duration-200 text-sm'
+                className='w-full inline-flex items-center justify-center py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-200 text-sm'
               >
                 Donate ${tier.amount}
               </a>
@@ -40,20 +55,17 @@ export function DonationPanel() {
           ))}
         </div>
 
-        {/* Fundraising Progress */}
-        <div className='bg-gradient-to-br from-zinc-900 to-zinc-800 border border-white/10 rounded-xl p-8'>
-          <div className='mb-4'>
-            <div className='flex justify-between items-center mb-2'>
-              <span className='font-semibold'>Fundraising Progress</span>
-              <span className='text-sm text-zinc-400'>$45,000 of $50,000</span>
-            </div>
-            <div className='w-full bg-zinc-700 rounded-full h-3 overflow-hidden'>
-              <div className='bg-gradient-to-r from-blue-600 to-purple-600 h-full' style={{ width: '90%' }} />
-            </div>
-          </div>
-          <p className='text-sm text-zinc-400'>
-            90% funded. Every contribution gets us closer to breaking ground on this project.
+        {/* Call to Action */}
+        <div className='text-center'>
+          <p className='text-muted-foreground mb-6'>
+            Want to make a custom donation or have questions?
           </p>
+          <a
+            href={campaign.donationUrl}
+            className='inline-flex items-center justify-center px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-200 text-lg'
+          >
+            Support the Build
+          </a>
         </div>
       </div>
     </section>

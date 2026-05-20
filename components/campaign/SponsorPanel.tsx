@@ -35,11 +35,11 @@ const SPONSOR_BENEFITS = [
 
 export function SponsorPanel() {
   return (
-    <section className='bg-zinc-950 text-white py-20 lg:py-28'>
+    <section className='bg-background text-foreground py-20 lg:py-28'>
       <div className='mx-auto max-w-7xl px-6'>
         <div className='mb-16'>
           <h2 className='text-4xl lg:text-5xl font-bold mb-4'>Sponsorship Opportunities</h2>
-          <p className='text-lg text-zinc-300'>
+          <p className='text-lg text-muted-foreground'>
             Partner with us to amplify your brand while supporting a transformational community project.
           </p>
         </div>
@@ -49,15 +49,15 @@ export function SponsorPanel() {
           {SPONSOR_BENEFITS.map((sponsor, index) => (
             <div
               key={index}
-              className='bg-gradient-to-br from-zinc-900 to-zinc-800 border border-white/10 rounded-xl p-8 hover:border-blue-500/30 transition-all duration-300'
+              className='bg-muted border border-border rounded-xl p-8 hover:border-blue-600 transition-all duration-300'
             >
               <h3 className='text-2xl font-bold mb-2'>{sponsor.tier}</h3>
-              <p className='text-3xl font-bold text-blue-400 mb-6'>{sponsor.investment}</p>
+              <p className='text-3xl font-bold text-blue-600 mb-6'>{sponsor.investment}</p>
               
               <ul className='space-y-3'>
                 {sponsor.benefits.map((benefit, i) => (
-                  <li key={i} className='flex gap-3 text-zinc-300'>
-                    <span className='text-blue-400 flex-shrink-0'>✓</span>
+                  <li key={i} className='flex gap-3 text-foreground'>
+                    <span className='text-blue-600 flex-shrink-0 font-bold'>✓</span>
                     <span>{benefit}</span>
                   </li>
                 ))}
@@ -65,7 +65,7 @@ export function SponsorPanel() {
 
               <a
                 href='mailto:info@newworldkids.org'
-                className='mt-8 w-full inline-flex items-center justify-center py-3 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-lg transition-colors duration-200'
+                className='mt-8 w-full inline-flex items-center justify-center py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-200'
               >
                 Get in Touch
               </a>
@@ -74,10 +74,10 @@ export function SponsorPanel() {
         </div>
 
         {/* Custom Sponsorship */}
-        <div className='mt-12 bg-gradient-to-br from-blue-600/20 to-purple-600/20 border border-blue-500/20 rounded-xl p-8'>
-          <p className='text-zinc-300'>
+        <div className='mt-12 bg-blue-50 dark:bg-blue-600/10 border border-blue-200 dark:border-blue-500/20 rounded-xl p-8'>
+          <p className='text-foreground'>
             Have a creative idea for partnership? We&apos;re open to custom sponsorship structures that align with your brand values and goals.{' '}
-            <a href='mailto:info@newworldkids.org' className='text-blue-400 hover:text-blue-300 font-semibold'>
+            <a href='mailto:info@newworldkids.org' className='text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-semibold'>
               Let&apos;s talk
             </a>
           </p>
