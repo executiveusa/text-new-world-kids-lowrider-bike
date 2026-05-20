@@ -9,7 +9,6 @@ import { AuctionPreview } from "@/components/campaign/AuctionPreview";
 import { Faq } from "@/components/campaign/Faq";
 import { LegalNotice } from "@/components/campaign/LegalNotice";
 import { SiteFooter } from "@/components/campaign/SiteFooter";
-import { ModelViewer } from "@/components/campaign/ModelViewer";
 import { KineticMarquee } from "@/components/cinematic/KineticMarquee";
 
 export default function Page() {
@@ -24,10 +23,6 @@ export default function Page() {
       <DonationPanel />
       <SponsorPanel />
       <AuctionPreview />
-      <section className="px-6 py-10">
-        <h2 className="text-2xl font-semibold">Future 3D model support</h2>
-        <ModelViewer />
-      </section>
       <Faq />
       <LegalNotice />
       <SiteFooter />

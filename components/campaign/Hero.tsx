@@ -1,39 +1,88 @@
-import { Bike3D } from './Bike3D';
+'use client';
+
+import Image from 'next/image';
 import { campaign } from '@/config/campaign';
-import { MeshGradient } from '@/components/cinematic/MeshGradient';
-import { SpotlightCard } from '@/components/cinematic/SpotlightCard';
-import { OdometerValue } from '@/components/cinematic/OdometerValue';
 
 export function Hero() {
   return (
-    <section className='min-h-[100dvh] bg-gradient-to-br from-zinc-950 via-zinc-900 to-zinc-950 text-white overflow-hidden'>
-      <div className='relative mx-auto grid max-w-7xl grid-cols-1 gap-8 px-6 py-14 lg:grid-cols-2 lg:items-center'>
-        <MeshGradient>
-          <div className='space-y-6 p-6 lg:p-8'>
-            <p className='text-xs font-semibold uppercase tracking-[0.2em] text-blue-300'>{campaign.nonprofitName} Campaign</p>
-            <h1 className='text-4xl font-bold leading-tight lg:text-6xl'>{campaign.heroHeadline}</h1>
-            <p className='max-w-xl text-base leading-relaxed text-zinc-300 lg:text-lg'>{campaign.heroSubheadline}</p>
+    <section className='min-h-[100dvh] bg-black text-white overflow-hidden'>
+      {/* Background accents */}
+      <div className='absolute inset-0 overflow-hidden pointer-events-none'>
+        <div className='absolute top-0 right-0 w-96 h-96 bg-blue-600/5 blur-3xl rounded-full' />
+        <div className='absolute bottom-0 left-0 w-96 h-96 bg-blue-500/5 blur-3xl rounded-full' />
+      </div>
 
-            <div className='flex flex-wrap gap-3'>
-              <a href={campaign.donationUrl} className='rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-500'>Donate now</a>
-              <a href={campaign.artistApplicationUrl} className='rounded-lg border border-white/25 px-6 py-3 font-semibold transition hover:border-white/50 hover:bg-white/5'>Apply as artist</a>
+      <div className='relative mx-auto max-w-7xl px-6 py-16 lg:py-20 min-h-[100dvh] flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-center'>
+        
+        {/* Left: Content */}
+        <div className='flex flex-col justify-center space-y-8 z-10'>
+          {/* Eyebrow */}
+          <div>
+            <p className='text-sm font-semibold uppercase tracking-widest text-blue-400'>
+              Seattle-local community art build
+            </p>
+          </div>
+
+          {/* Headline */}
+          <div>
+            <h1 className='text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight tracking-tight'>
+              {campaign.heroHeadline}
+            </h1>
+          </div>
+
+          {/* Subheadline */}
+          <p className='text-lg lg:text-xl text-zinc-300 leading-relaxed max-w-xl'>
+            {campaign.heroSubheadline}
+          </p>
+
+          {/* CTAs */}
+          <div className='flex flex-col sm:flex-row gap-4 pt-4'>
+            <a
+              href={campaign.donationUrl}
+              className='inline-flex items-center justify-center px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-lg transition-colors duration-200'
+            >
+              Support the Build
+            </a>
+            <a
+              href={campaign.artistApplicationUrl}
+              className='inline-flex items-center justify-center px-8 py-4 border border-white/20 hover:border-white/40 hover:bg-white/5 text-white font-semibold rounded-lg transition-colors duration-200'
+            >
+              Apply as an Artist
+            </a>
+          </div>
+
+          {/* Microcopy */}
+          <div className='pt-8 border-t border-white/10'>
+            <p className='text-sm text-zinc-400'>
+              Nonprofit-led. Community-powered. Not an official team or league campaign.
+            </p>
+          </div>
+
+          {/* Stats */}
+          <div className='flex gap-8 pt-4'>
+            <div>
+              <div className='text-3xl font-bold text-blue-400'>
+                ${campaign.totalGoalUsd.toLocaleString()}
+              </div>
+              <p className='text-xs uppercase tracking-wider text-zinc-500 mt-1'>Fundraising Goal</p>
             </div>
-
-            <div className='grid grid-cols-2 gap-3'>
-              <SpotlightCard>
-                <p className='text-xs uppercase tracking-wider text-zinc-400'>Fundraising Goal</p>
-                <OdometerValue>${campaign.totalGoalUsd.toLocaleString()}</OdometerValue>
-              </SpotlightCard>
-              <SpotlightCard>
-                <p className='text-xs uppercase tracking-wider text-zinc-400'>Community</p>
-                <OdometerValue>100+</OdometerValue>
-              </SpotlightCard>
+            <div>
+              <div className='text-3xl font-bold text-zinc-300'>100+</div>
+              <p className='text-xs uppercase tracking-wider text-zinc-500 mt-1'>Artists & Supporters</p>
             </div>
           </div>
-        </MeshGradient>
+        </div>
 
-        <div className='h-[400px] sm:h-[500px] lg:h-[620px]'>
-          <Bike3D />
+        {/* Right: Bike Image */}
+        <div className='relative h-[400px] sm:h-[500px] lg:h-[600px] w-full z-20'>
+          <Image
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_8761.JPEG-l1RA55MqwmUxyvpnIyaJiNqHzF0e3A.jpeg"
+            alt="Rocky Mountain EDGE 24 lowrider bike - complete assembly view"
+            fill
+            priority
+            quality={85}
+            className='object-contain object-center drop-shadow-2xl'
+          />
         </div>
       </div>
     </section>
