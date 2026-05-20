@@ -1,1 +1,5 @@
-export function OdometerValue({children}:{children?:React.ReactNode}){return <div>{children}</div>}
+import type { ReactNode } from "react";
+
+export function OdometerValue({ children }: { children?: ReactNode }) {
+  return <span className="font-mono text-2xl font-bold text-blue-300">{children}</span>;
+}
