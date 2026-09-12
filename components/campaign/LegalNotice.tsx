@@ -8,7 +8,7 @@ export function LegalNotice() {
           <div>
             <h3 className='text-lg font-semibold mb-3'>Legal Disclaimer</h3>
             <p className='text-sm text-muted-foreground leading-relaxed'>
-              This campaign is organized by New World Kids, a 501(c)(3) nonprofit organization. This is not an official campaign affiliated with any professional sports team, league, or government entity. All donations are voluntary contributions to support community art education programs.
+              This campaign is organized by New World Kids, a fiscally sponsored program of Humanitarian Social Innovations, an established 501(c)(3) nonprofit organization. This is not an official campaign affiliated with, sponsored by, or endorsed by any professional sports team, league, or rights holder. All donations are voluntary contributions supporting youth art and community programs.
             </p>
           </div>
 
@@ -35,7 +35,7 @@ export function LegalNotice() {
 
           <div className='pt-8 border-t border-border'>
             <p className='text-xs text-muted-foreground'>
-              New World Kids is a registered 501(c)(3) nonprofit organization (EIN: XX-XXXXXXX). This campaign is conducted in accordance with all applicable federal, state, and local laws and regulations.
+              New World Kids is a fiscally sponsored program of Humanitarian Social Innovations, a 501(c)(3) nonprofit organization (EIN: 46-4779591). Donations are tax-deductible to the extent allowed by law and are processed through our fiscal sponsor. This campaign is conducted in accordance with all applicable federal, state, and local laws and regulations.
             </p>
           </div>
         </div>

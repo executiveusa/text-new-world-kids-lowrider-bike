@@ -4,9 +4,9 @@ import { campaign } from '@/config/campaign';
 
 const DONATION_TIERS = [
   { amount: 25, label: 'Supporter', benefit: 'Digital thank you + recognition' },
-  { amount: 100, label: 'Sponsor', benefit: 'All above + official merchandise' },
-  { amount: 500, label: 'Major Sponsor', benefit: 'All above + custom recognition' },
-  { amount: 2500, label: 'Premier', benefit: 'VIP event access + limited edition item' },
+  { amount: 100, label: 'Sponsor', benefit: 'All above + name on the build wall' },
+  { amount: 500, label: 'Major Sponsor', benefit: 'All above + recognition at the reveal event' },
+  { amount: 2500, label: 'Premier', benefit: 'All above + featured recognition at the auction' },
 ];
 
 export function DonationPanel() {
