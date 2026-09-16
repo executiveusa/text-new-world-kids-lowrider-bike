@@ -1,0 +1,125 @@
+{
+  "count": 15,
+  "assets": [
+    {
+      "file": "public/assets/bike/originals/IMG_8761.jpg",
+      "bytes": 1285200,
+      "sha256": "d32d7ba3a8724e1b43e42634c7d6ba45cdb6eac2ffd9872eb8e1b4a17ebeff73",
+      "source_url": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_8761.JPEG-l1RA55MqwmUxyvpnIyaJiNqHzF0e3A.jpeg",
+      "content_type": "image/jpeg",
+      "metadata": "EXIF, XMP and IPTC stripped; ICC color profile retained; source_url records origin"
+    },
+    {
+      "file": "public/assets/bike/originals/IMG_8762.jpg",
+      "bytes": 1251774,
+      "sha256": "76d7a8b232caaa2e622244a0b18be9b72d9eb717622cca854fcf8c8fffb20c2b",
+      "source_url": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_8762.JPEG-VjwGSYZer9kcby0qLUhpFLCLcJ0c1Z.jpeg",
+      "content_type": "image/jpeg",
+      "metadata": "EXIF, XMP and IPTC stripped; ICC color profile retained; source_url records origin"
+    },
+    {
+      "file": "public/assets/bike/originals/IMG_8764.jpg",
+      "bytes": 1118385,
+      "sha256": "bff5d7a0bb7a9185cd797d939fd737e727f72a26920e52da41b2140fb3cd1a35",
+      "source_url": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_8764.JPEG-7XTvjYwqasYQI9pzA1c2oIYMTjsIbo.jpeg",
+      "content_type": "image/jpeg",
+      "metadata": "EXIF, XMP and IPTC stripped; ICC color profile retained; source_url records origin"
+    },
+    {
+      "file": "public/assets/bike/originals/IMG_8765.jpg",
+      "bytes": 1113445,
+      "sha256": "224f1e4a4724ad9e8bcd70cc42db6302c3818d88ef63d455684cc427bf3d0a84",
+      "source_url": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_8765.JPEG-9WKzrZVi5FFlEWU0oghy886q8f8Uk6.jpeg",
+      "content_type": "image/jpeg",
+      "metadata": "EXIF, XMP and IPTC stripped; ICC color profile retained; source_url records origin"
+    },
+    {
+      "file": "public/assets/bike/originals/IMG_8766.jpg",
+      "bytes": 1127165,
+      "sha256": "8ac6c2590e9549ac85debc95c06ec82796ad81ef5d85566ae9def1103d99f540",
+      "source_url": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_8766.JPEG-bClCJDV8HPQhgMVksl8NC6RmLMBJL4.jpeg",
+      "content_type": "image/jpeg",
+      "metadata": "EXIF, XMP and IPTC stripped; ICC color profile retained; source_url records origin"
+    },
+    {
+      "file": "public/assets/bike/originals/IMG_8767.jpg",
+      "bytes": 984270,
+      "sha256": "2fc5aed42e7bd0dc63b008554fbdd1c2ea350c4cb28f2d2b457b50612a88246f",
+      "source_url": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_8767.JPEG-3ih0T56AEZrdlpvCM3KBCB3zZFNRTw.jpeg",
+      "content_type": "image/jpeg",
+      "metadata": "EXIF, XMP and IPTC stripped; ICC color profile retained; source_url records origin"
+    },
+    {
+      "file": "public/assets/bike/originals/IMG_8769.jpg",
+      "bytes": 1008824,
+      "sha256": "f933b6f53b5f766a79a6c930b35fbef39516f644f1c1a2dd02c566b5948f8e28",
+      "source_url": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_8769.JPEG-CnCcE7N7WiWQ9cDUSJPxOxLX0FKxDT.jpeg",
+      "content_type": "image/jpeg",
+      "metadata": "EXIF, XMP and IPTC stripped; ICC color profile retained; source_url records origin"
+    },
+    {
+      "file": "public/assets/bike/originals/IMG_8770.jpg",
+      "bytes": 880812,
+      "sha256": "e74b08adc4fd7e5487af25f8ac43744c9843d607b648eb66357b8d0a638f09e1",
+      "source_url": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_8770.JPEG-hmiSgeOTZ7wWh5KtoMWAJSMGta4Gbw.jpeg",
+      "content_type": "image/jpeg",
+      "metadata": "EXIF, XMP and IPTC stripped; ICC color profile retained; source_url records origin"
+    },
+    {
+      "file": "public/assets/bike/originals/IMG_8771.jpg",
+      "bytes": 692048,
+      "sha256": "c633f51e7168f82d5b8524f9a679b7eeab5f10eb2259776380277b209a9e9339",
+      "source_url": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_8771.JPEG-VCGyxbWzWjSSbOOrqriBxzX6n4mBID.jpeg",
+      "content_type": "image/jpeg",
+      "metadata": "EXIF, XMP and IPTC stripped; ICC color profile retained; source_url records origin"
+    },
+    {
+      "file": "public/assets/bike/originals/IMG_8772.jpg",
+      "bytes": 769881,
+      "sha256": "8a8a4eeb1dc855bd4de5c66f0ed6bab2b9157b0d721258b7f92683899202758b",
+      "source_url": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_8772.JPEG-y1Ucqbk5v4ITPliQQwMnmQEMfDGmn1.jpeg",
+      "content_type": "image/jpeg",
+      "metadata": "EXIF, XMP and IPTC stripped; ICC color profile retained; source_url records origin"
+    },
+    {
+      "file": "public/assets/bike/originals/IMG_8773.jpg",
+      "bytes": 775214,
+      "sha256": "88a1c4339a3b15a09cc97d9a486ae4569c14b510c174d6d7d0257f5ba6ccac92",
+      "source_url": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_8773.JPEG-bx9eyRg1BDKAas4LrFDbHOcIRI32II.jpeg",
+      "content_type": "image/jpeg",
+      "metadata": "EXIF, XMP and IPTC stripped; ICC color profile retained; source_url records origin"
+    },
+    {
+      "file": "public/assets/bike/originals/IMG_8780.jpg",
+      "bytes": 645987,
+      "sha256": "b4db3424320a4749ebe759fa1bcf972d50620e26061096a4c76fa75d50e794da",
+      "source_url": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_8780.JPEG-lxlhImWxPPaTLj2xLEq9GmwWQ6mrZW.jpeg",
+      "content_type": "image/jpeg",
+      "metadata": "EXIF, XMP and IPTC stripped; ICC color profile retained; source_url records origin"
+    },
+    {
+      "file": "public/assets/bike/originals/IMG_8782.jpg",
+      "bytes": 952047,
+      "sha256": "e5fd91a543aaf532dbc6190fee3e837c20b22bb72d957d806d293c68b4fa55f5",
+      "source_url": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_8782.JPEG-bwOZh2u7VXHGcHUs791bxr7vMC45F5.jpeg",
+      "content_type": "image/jpeg",
+      "metadata": "EXIF, XMP and IPTC stripped; ICC color profile retained; source_url records origin"
+    },
+    {
+      "file": "public/assets/bike/originals/IMG_8783.jpg",
+      "bytes": 999163,
+      "sha256": "f37694b28bb433ac417788feed8817b92fc71d3f251f5aff556a2699d415d4c7",
+      "source_url": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_8783.JPEG-zbjVuLUcV1LqrDORUGmbPnyA018oRh.jpeg",
+      "content_type": "image/jpeg",
+      "metadata": "EXIF, XMP and IPTC stripped; ICC color profile retained; source_url records origin"
+    },
+    {
+      "file": "public/assets/bike/originals/IMG_8787.jpg",
+      "bytes": 626688,
+      "sha256": "2ec0275b2a2b07a9f5716c7c2400adb36cd51ef4222ee8edfcd40e52eea380cb",
+      "source_url": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_8787.JPEG-vfIS1gehuQequ1L6BQTSS4iToqSjYF.jpeg",
+      "content_type": "image/jpeg",
+      "metadata": "EXIF, XMP and IPTC stripped; ICC color profile retained; source_url records origin"
+    }
+  ]
+}
